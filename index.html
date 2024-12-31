@@ -27,19 +27,19 @@
   </div>
 
   <div id="mid-section">
-    <input type="text" placeholder="Search for Emails"> 
+    <input type="text" id="email-search-bar" placeholder="Search for Emails"> 
     <table id="email-list">
       <tr> 
-        <th> Sender </th>
-        <th> Date </th>
-        <th> Time Received </th> 
+        <th id="person"> Sender </th>
+        <th id="dt"> Date </th>
+        <th id="prev"> Preview </th> 
       </tr>
       <tr> 
         <td> LinkedIn</td>
         <td> 02:45 PM </td>
         <td> You have a new connection request </td>
       </tr>
-      <tr>
+      <tr id="second-line">
         <td> Michael Scott Daily Quote </td>
         <td> Jul 3, 2020 </td>
         <td> i'm optimistic because everyday I get a... </td>
@@ -68,8 +68,8 @@
       "You cheated on me? When I specifically asked you not to?" <br><br>
       "Reverse psychology is an awesome tool. I don't know if you guys know about it, but basically, you make someon think the opposit of what you believe, and that tricks them into doing something stupid. Works like a charm."
     </p>
-    <input type="text" placeholder="Enter Message...">
-    <button type=submit> 
+    <input id="msg-box" type="text" placeholder="Enter Message..."> <br><br>
+    <button id="send" type=submit> 
       Send Email
     </button>
     

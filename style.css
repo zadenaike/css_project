@@ -12,22 +12,21 @@ display: flex;
 
 #left-section{
     background-color: rgb(58, 56, 56);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(198, 197, 197);
-    width: 25%;
+    width: 20%;
     height: 1000px;
     display: inline-block;
     vertical-align: left;
-    
 }
 
 #compose{
     background-color: rgb(14, 22, 166);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: none;
     color: whitesmoke;
-    padding: 10px 30px;
-    margin-left: 14px;
+    padding: 10px 30%;
+    margin-left: 35px;
     font-size: medium;
     border-radius: 8px;
 }
@@ -37,31 +36,79 @@ display: flex;
     padding: 10px;
 }
 
-sidebar-nav.li{
-    margin-bottom: 10px;;
+li{
+    margin-bottom: 15%;
 }
 
 /*Mid-Section Styling*/
 
 #mid-section{
     background-color: rgb(214, 212, 212);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    width: 25%;
+    width: 30%;
     height: 1000px;
     display: inline-block;
     vertical-align: middle;
 
 }
 
+#email-search-bar{
+    background-color: rgb(245, 240, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    color: whitesmoke;
+    padding: 10px 30px;
+    margin-left: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: medium;
+    border-radius: 8px;
+}
+
 /*Right Section Styling*/
 
 #right-section{
     background-color: whitesmoke;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     width: 50%;
     height: 1000px;
     display: inline-block;
     vertical-align: right;
 }
+
+#msg-box{background-color: rgb(245, 240, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(201, 200, 200);
+    color: whitesmoke;
+    padding: 100px 200px;
+    margin-left: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: medium;
+    border-radius: 8px;
+}
+
+#send{background-color: rgb(219, 90, 25);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    color: whitesmoke;
+    padding: 10px 30px;
+    margin-left: 14px;
+    font-size: medium;
+    border-radius: 8px;
+}
+
+#second-line{
+    background-color:white;
+}
+
+input::placeholder{text-align: left;
+   color:rgb(130, 130, 133);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
