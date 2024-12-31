@@ -8,6 +8,15 @@ text-align: left;
 display: flex;
 }
 
+
+@media screen and (max-width: 800px) {
+    #left, #main, #right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      height: auto;
+      min-height: 300px;
+    }
+  }
+
 /*Left Section Styling*/
 
 #left-section{
@@ -15,8 +24,6 @@ display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(198, 197, 197);
     width: 20%;
-    height: 1000px;
-    display: inline-block;
     vertical-align: left;
 }
 
@@ -25,9 +32,9 @@ display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: none;
     color: whitesmoke;
-    padding: 10px 30%;
-    margin-left: 35px;
-    font-size: medium;
+    padding: 10px 25%;
+    margin-left: 5%;
+    font-size: 1rem;
     border-radius: 8px;
 }
 
@@ -47,10 +54,8 @@ li{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     width: 30%;
-    height: 1000px;
     display: inline-block;
     vertical-align: middle;
-
 }
 
 #email-search-bar{
@@ -62,7 +67,7 @@ li{
     margin-left: 14px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: medium;
+    font-size: 1vw;
     border-radius: 8px;
 }
 
@@ -73,7 +78,6 @@ li{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     width: 50%;
-    height: 1000px;
     display: inline-block;
     vertical-align: right;
 }
@@ -88,7 +92,7 @@ li{
     margin-left: 14px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: medium;
+    font-size: 1vw;
     border-radius: 8px;
 }
 
@@ -98,7 +102,7 @@ li{
     color: whitesmoke;
     padding: 10px 30px;
     margin-left: 14px;
-    font-size: medium;
+    font-size: 1vw;
     border-radius: 8px;
 }
 
@@ -112,3 +116,15 @@ input::placeholder{text-align: left;
    
 }
 
+/* Stack everything on smaller screens */
+@media screen and (max-width: 800px) {
+    #parent {
+      flex-direction: column;
+    }
+  
+    #left-section,
+    #mid-section,
+    #right-section {
+      width: 100%;
+      min-height: auto;   /* let them grow with content */
+    }
